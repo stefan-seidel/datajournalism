@@ -1,1 +1,64 @@
 
+#main, #nav, #footer {
+	max-width: 60rem;
+}
+
+#main > .post {
+/*	padding: 8rem 10rem 6rem 10rem ; */
+}
+
+#main > .post header.major h2, 
+h2, h2 a {
+	font-size: 2.4rem;
+}
+
+header.major, header.major > p {
+	text-align: left;
+}
+
+span.initiative1europa, 
+td.initiative1europa { 
+	color: #e2d6bc; font-weight: bold; 
+}
+span.gruene, 
+td.gruene { 
+	color: #73af48; font-weight: bold; 
+}
+span.fpoe, 
+td.fpoe { 
+	color: #005da8; font-weight: bold; 
+}
+span.kpoe, 
+td.kpoe { 
+	color: #fdb736; font-weight: bold; 
+}
+span.neos, 
+td.neos { 
+	color: #dd4a75; font-weight: bold; 
+}
+span.oevp, 
+td.oevp { 
+	color: #28a1d7; font-weight: bold; 
+}
+span.spoe, 
+td.spoe { 
+	color: #d71f1c; font-weight: bold; 
+}
+
+td.initiative1europa li, 
+td.gruene li, 
+td.fpoe li, 
+td.kpoe li, 
+td.neos li, 
+td.oevp li, 
+td.spoe li {
+	font-weight: normal;
+}
+
+p.small {
+	font-size: 0.85rem;
+}
+
+table.light tbody tr td {
+	background-color: #ffffff;
+}
