@@ -18,7 +18,9 @@ header.major, header.major > p {
 
 span.initiative1europa, 
 td.initiative1europa { 
-	color: #e2d6bc; font-weight: bold; 
+	/* color: #e2d6bc; */
+	color: #caba7a;
+	font-weight: bold; 
 }
 span.gruene, 
 td.gruene { 
