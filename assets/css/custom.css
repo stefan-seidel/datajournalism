@@ -64,3 +64,7 @@ p.small {
 table.light tbody tr td {
 	background-color: #ffffff;
 }
+
+blockquote {
+	text-align: left;
+}
