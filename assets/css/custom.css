@@ -69,3 +69,7 @@ table.light tbody tr td {
 blockquote {
 	text-align: left;
 }
+
+tr.center > td {
+	text-align: center;
+}
