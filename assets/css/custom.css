@@ -58,7 +58,7 @@ td.spoe li {
 	font-weight: normal;
 }
 
-p.small {
+p.small, td.small {
 	font-size: 0.85rem;
 }
 
