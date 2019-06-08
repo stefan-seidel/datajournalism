@@ -32,11 +32,6 @@
 							<li><a href="infos.html">Allgemeine Infos</a></li>
 						</ul>
 						<ul class="icons">
-							<!--
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							-->
 							<li><a href="https://github.com/stefan-seidel/datajournalism" class="icon fa-github" target="_new"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
@@ -49,9 +44,11 @@
 
 								<h2>Stimmungsanalyse</h2>
 
+								<p class="small">Hier sei noch einmal betont, dass die Sentiment-Analyse bestenfalls grobe Abschätzungen liefern kann und keinesfalls sich zu einem hermeneutischen Verständnis aufschwingt.</p>
+
 								<p>Im nächsten Schritt wurde mittels <a href="https://de.wikipedia.org/wiki/Sentiment_Detection" target="_new" title="Sentiment Analyse @ Wikipedia">Sentiment Analyse</a> versucht die Stimmung zu ermitteln, welche mit den Inhalten der jeweiligen Parteiprogramme transportiert wird. Dazu wurde jedes einzelne Wort anhand einer Positiv-/Negativ-Wortliste (<a href="http://wortschatz.uni-leipzig.de/en/download/" target="_new" title="SentimentWortschatz, Universität Leipzig">SentiWS</a> <sup>1</sup>) der Universität Leipzig abgeglichen und dessen Polaritätswert zwischen -1 (für negativ) und +1 (für positiv) festgestellt.</p>
 
-								<p class="small"><sup>1</sup> <a href="http://www.lrec-conf.org/proceedings/lrec2012/pdf/327_Paper.pdf" target="_new" title="SentiWS – a Publicly Available German-language Resource for Sentiment Analysis">D. Goldhahn, T. Eckart & U. Quasthoff: Building Large Monolingual Dictionaries at the Leipzig Corpora Collection: From 100 to 200 Languages. In: Proceedings of the 8th International Language Ressources and Evaluation (LREC'12), 2012</a></p>
+								
 
 
 								<p>Somit kann aus der Anzahl an positiv bzw. negativ konnotierten Wörtern, unter Berücksichtigung der Gesamtwortanzahl ein (ungewichteter) Stimmungswert berechnet werden, der darüber Auskunft gibt, wie das jeweilige Programm wahrgenommen wird. Wird dabei noch der exakte Polaritätswert (zwischen -1 und +1) der einzelnen Wörter in der Berechnung miteinbezogen, lässt sich ein gewichteter Wert ermitteln der, im Fall der Wahlprogramme, dabei eine deutlich unbehaglichere Stimmung aufkommen lässt.</p>
@@ -63,13 +60,59 @@
 								<p>Nichts desto trotz ergeben sich nach Stimmung bemessen folgende Best-of´s an positiver, als auch negativer Wörter pro Partei.</p>
 
 
+								<div class='tableauPlaceholder' id='viz1559962372580' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BADJSentimentTextposnegAnzahlCircles&#47;PosNegVergleich&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BADJSentimentTextposnegAnzahlCircles&#47;PosNegVergleich' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;BA&#47;BADJSentimentTextposnegAnzahlCircles&#47;PosNegVergleich&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1559962372580');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								
 
+								<table class="alt">
+									<!--
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>&nbsp;</th>
+										</tr>
+									</thead>
+									-->
+									<tbody>
+										<tr>
+											<td><span class="gruene">Die Grünen</span></td>
+											<td><span class="fpoe">FPÖ</span></td>
+											<td><span class="initiative1europa">1 Europa</span></td>
+											<td><span class="kpoe">KPÖ</span></td>
+											<td><span class="neos">NEOS</span></td>
+											<td><span class="oevp">ÖVP</span></td>
+											<td><span class="spoe">SPÖ</span></td>
+										</tr>
+										<tr class="center">
+											<td>141 : 86</td>
+											<td>168 : 90</td>
+											<td>10 : 4</td>
+											<td>24 : 11</td>
+											<td>131 : 65</td>
+											<td>129 : 41</td>
+											<td>174 : 103</td>
+										</tr>
+										<tr class="center">
+											<td>2,7</td>
+											<td>2,9</td>
+											<td>3</td>
+											<td>2,4</td>
+											<td>3,3</td>
+											<td>4,8</td>
+											<td>2,9</td>
+										</tr>
+										
+									</tbody>
+								</table>
 
 
 								<p>Obwohl sich die verwendeten Methoden der angewandten computergestützten Auswertung ständig verbessern, sollten die Ergebnisse dennoch nicht überbewertet werden und auf keinen Fall als Ersatz zur inhaltlichen Auseinandersetzung mit den Parteiprogrammen betrachtet werden. Auch dann nicht wenn es vermutlich sowohl einiges an Zeit als auch Energie bedarf, um sich durch die jeweiligen Positionen und geplanten  Vorhaben der unterschiedlichen Parteien durchzuarbeiten.</p>
 
 
 
+								<hr />
+
+								<p class="small"><sup>1</sup> <a href="http://www.lrec-conf.org/proceedings/lrec2012/pdf/327_Paper.pdf" target="_new" title="SentiWS – a Publicly Available German-language Resource for Sentiment Analysis">D. Goldhahn, T. Eckart & U. Quasthoff: Building Large Monolingual Dictionaries at the Leipzig Corpora Collection: From 100 to 200 Languages. In: Proceedings of the 8th International Language Ressources and Evaluation (LREC'12), 2012</a></p>
 
 							</section>
 
