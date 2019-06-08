@@ -73,3 +73,25 @@ blockquote {
 tr.center > td {
 	text-align: center;
 }
+
+
+
+div.main .tableauPlaceholder, 
+div.main #viz1559962546729 {
+	height: 450px;
+	overflow: hidden;
+}
+
+.embedWrapper75, 
+.embedWrapper100 {
+	border: 2px dotted #165374; 
+	padding: 0.5em;
+}
+
+.embedWrapper75 {
+	width: 75%; 
+}
+.embedWrapper100 {
+	width: 98%; 
+}
+
